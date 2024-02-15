@@ -605,3 +605,54 @@
 .copyright a:hover {
     color: var(--bs-primary);
 }
+
+.btn-whatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 90px;
+    right: 30px;
+    background-image: url("../img/whatsapp.png");
+    background-size: cover;
+    color: #FFFFFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px  rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.container {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.container .slide {
+    width: 200px;
+}
+
+.container .slide img{
+    width: 160px;
+    height: 150px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
