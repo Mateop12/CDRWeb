@@ -646,6 +646,16 @@
     height: 150px;
 }
 
+.img-servicios {
+    width: 500px;
+    height: 350px;
+}
+@media (min-width: 992px) {
+    .img-servicios {
+        margin-top: 50px; /* Ajusta la cantidad de margen superior según sea necesario */
+    }
+}
+
 @keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
