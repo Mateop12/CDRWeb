@@ -673,6 +673,13 @@
     overflow: auto;
 }
 
+.busqueda-examenes li {
+    margin:3px; /* Ajusta este valor según el espacio que desees */
+    border-radius: 5px;
+  }
+  
+
+
 @media (max-width: 767px) {
     .prueba {
         margin: 0;
@@ -717,6 +724,8 @@
         text-align: center;
     }
 }
+
+
 
 
 

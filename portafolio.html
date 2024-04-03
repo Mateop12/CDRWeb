@@ -131,7 +131,114 @@
                 <h1 class="display-6 mb-3">Portafolio pruebas de laboratorio</h1>
                 <p class="mb-5">Consulte la prueba que requiere. Allí podrá informarse de su utilidad clínica, cuales requisitos debe cumplir para que la determinación sea confiable y en cuanto tiempo tendrá su resultado. Puede buscar por palabra clave o realizar una búsqueda alfabética.</p>
             </div>
+            
             <div class="row g-4">
+                <ul class="busqueda-examenes wow fadeInUp" data-wow-delay="0.1s"">
+                    <script>
+                      // Definir una función para generar las letras del alfabeto
+                      function generateAlphabetLinks() {
+                        
+                        var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+                        
+                        // Iterar sobre cada letra del alfabeto
+                        alphabet.forEach(function(letter) {
+                          
+                          var listItem = document.createElement('li');
+                          listItem.className = 'btn btn-primary ';
+                          var link = document.createElement('a');
+                          link.className = 'text-white spaced-letter';
+                          link.href = '/busquedaportafolio?q=' + letter;
+                          link.target = '_parent';
+                          link.title = 'Ver exámenes de esta letra ' + letter;
+                          link.textContent = letter;
+                          listItem.appendChild(link);
+                          
+                          
+                          document.querySelector('.busqueda-examenes').appendChild(listItem);
+                        });
+                      }
+                      generateAlphabetLinks();
+                    </script>
+                  </ul>
+                    
+                    
+                <!-- <ul class="busqueda-examenes">
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=A" target="_parent" title="Ver ex&aacute;menes de esta letra A">A</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra B">B</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=C" target="_parent" title="Ver ex&aacute;menes de esta letra C">C</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=D" target="_parent" title="Ver ex&aacute;menes de esta letra D">D</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra E">E</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra F">F</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra G">G</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra H">H</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra I">I</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra J">J</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra K">K</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra L">L</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra M">M</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra N">N</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra O">O</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra P">P</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra Q">Q</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra R">R</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra T">S</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra U">U</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra V">V</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra W">W</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra X">X</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra Y">Y</a>
+                    </li>
+                    <li class="btn btn-primary">
+                      <a class="text-white" href="/busquedaportafolio?q=B" target="_parent" title="Ver ex&aacute;menes de esta letra Z">Z</a>
+                    </li>
+                </ul>     -->
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <div class="icon-box-primary mb-4">
