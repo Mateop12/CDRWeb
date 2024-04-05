@@ -58,7 +58,7 @@
                     <a class="breadcrumb-item small text-body" href="#">FAQs</a> -->
                 </nav> 
             </div>
-        </div>
+        </div>|
     </div>
     <!-- Topbar End -->
     </header>
@@ -146,29 +146,30 @@
                     <p class="mb-4">En el Laboratorio Clínico Central de Referencia seleccionamos y vinculamos talento humano competente enmarcado en los postulados corporativos del sentido de servicio, la disciplina y la responsabilidad actuando siempre con equidad y transparencia. Nuestro talento humano se caracteriza por actuar de manera anticipada para proteger la propia integridad, la de sus pacientes, la de otros y la del medio ambiente, garantizando así la seguridad en los procesos y propiciando un ambiente de trabajo sano. <br>Buscamos nuevos talentos que trabajen en equipo hacia el logro de las metas organizacionales, cumpliendo con los compromisos acordados y participando activamente. Que tengan criterio propositivo, disciplina y la capacidad de compartir conocimientos e información para aprender y crecer profesional y personalmente. Entre los perfiles que usualmente se incluyen en los procesos de selección de nuestro laboratorio están los de bacteriólogos y laboratoristas clínicos, microbiólogos y bioanalistas, auxiliares de enfermería con experiencia en laboratorio clínico, facturadora, mensajera, auxiliares administrativos. Toda información registrada en la hoja de vida será validada por la empresa mediante la solicitud de los soportes respectivos.</p>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <!-- <h2 class="mb-4">Online Appoinment</h2> -->
+                    <h2 class="mb-4">Formulario </h2>
+                    <form action="" method="POST">
                     <div class="row g-3 ">
                         <div class="col-sm-6 ">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Nombre Completo" required>
-                                <label for="name">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre Completo" required>
+                                <label for="nombre">Nombre Completo</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="mail" placeholder="Correo" required>
+                                <input type="email" class="form-control" id="mail" name="mail" placeholder="Correo" required>
                                 <label for="mail">Correo</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" placeholder="Celular" required>
+                                <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Celular" required>
                                 <label for="mobile">Celular</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <select class="form-select" id="service">
+                                <select class="form-select" id="service" name="service">
                                     <option selected>Bacteriólogo</option>
                                     <option value="">Auxiliar de laboratorio</option>
                                     <option value="">Mensajero</option>
@@ -180,12 +181,11 @@
                         </div>
                         <div class="col-12">
                             <label for="formFile" class="form-label">Seleccione la hoja de vida (pdf, doc, docx)</label>
-                            <input class="form-control" type="file" id="formFile"required>
+                            <input class="form-control" type="file" id="formFile" name="formFile" required>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Escribe un comentario" id="message"
-                                    style="height: 130px"></textarea>
+                                <textarea class="form-control" placeholder="Escribe un comentario" id="message" name="message" style="height: 130px"></textarea>
                                 <label for="message">Comentario</label>
                             </div>
                         </div>
@@ -199,12 +199,12 @@
                                 Debes aceptar antes de enviar.
                               </div>
                             </div>
-                          </div>
+                        </div>
                         <div class="col-12 text-center">
                             <button class="btn btn-primary w-100 py-3" type="submit">Enviar datos</button>
                         </div>
-                        
                     </div>
+                    </form> 
                 </div>
         </div>
     </div>            
